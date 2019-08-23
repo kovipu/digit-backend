@@ -1,12 +1,15 @@
 # Digit - Backend
 
 Node backend for handling student organization Digit website. 
+<<<<<<< HEAD
 
 ## IMPORTANT UPDATE
 
 We have changed from Vagrant to Docker.
 
 **TODO**: Update instructions
+=======
+>>>>>>> Removed useless stuff from docker file, and removed unwanted changes from readme
 
 ## Installing / Getting started
 
@@ -21,6 +24,11 @@ Instructions from [here](https://runnable.com/docker/getting-started/) and Googl
 ```shell
 git clone <your fork url>/digit-backend
 cd digit-backend
+<<<<<<< HEAD
+=======
+nvm use 
+vagrant up
+>>>>>>> Removed useless stuff from docker file, and removed unwanted changes from readme
 ```
 
 4. Optional: Moving from Vagrant to Docker
@@ -36,11 +44,19 @@ Remove both `applied_*.json` files from `/migrations` folder
 docker-compose up
 ```
 
+<<<<<<< HEAD
 Docker creates two containers, database and the node app and everything is controlled by docker so no need to install `npm` on host.
 
 ## Developing
 
 Launch containers and start developing. `Pm2` will take care of reloading application whenever files are changed. Recommended not to use too frequent auto save function on editor. 
+=======
+`vagrant ssh default` 
+
+*replace `default` with `wsl` if using Windows Subsystem for Linux* 
+
+Project codes are located on `/vagrant` folder which opens automatically after SSH-connection. 
+>>>>>>> Removed useless stuff from docker file, and removed unwanted changes from readme
 
 **Docker commands**
 
@@ -64,6 +80,10 @@ Testing can be performed by running tests in a additional test container:\
 
 Test container creates own database and launches container on background.
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> Removed useless stuff from docker file, and removed unwanted changes from readme
 #### Integration tests 
 
 Integration tests are located in `/tests` folder on project root which tests API-endpoints. All tests that requires API must run `initializeApi` before all and `closeApi` after all tests. These functions intialized server with help of `supertest` library and are located on `testHelpers.js` file.
@@ -151,4 +171,8 @@ Example of how to create a new feature/fix
 
 ## Licensing
 
+<<<<<<< HEAD
 The code in this project is licensed under [MIT license.](/LICENSE)
+=======
+"The code in this project is licensed under [MIT license.](/LICENSE)"
+>>>>>>> Removed useless stuff from docker file, and removed unwanted changes from readme
